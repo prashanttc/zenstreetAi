@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply scroll-smooth remove-scrollbar;
+  }
+
+  /* Remove scrollbar */
+  .remove-scrollbar::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    border-radius: 0px;
+  }
+
+  .remove-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .remove-scrollbar::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 0px;
+  }
+
+  .remove-scrollbar::-webkit-scrollbar-thumb:hover {
+    /* background: #1e2238; */
+    background: transparent;
+  }
+
+  .recharts-responsive-container {
+    height: initial !important;
+  }
+
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer utilities {
+  
+  .section {
+    @apply w-[571px] fixed bg-brand h-[1020px];
+  };
+
+  .profile-box {
+    @apply flex fixed w-[103px] h-[40px] top-[48px] items-center left-[78px] gap-[6px]
+  };
+
+  .book-session-button {
+    @apply w-[415px] h-[68px] fixed top-[690px] left-[78px] rounded-[44px] bg-white py-[18px] px-[26px] flex items-center justify-center;
+  };
+
+  .border-gradient {
+    @apply rounded-[90px] flex items-center justify-center bg-gradient-to-r from-[#0044FA] to-[#63BEFF] w-fit h-[59px] p-[2px];
+  }
+  .therapy-offer {
+   @apply h-full w-full bg-white rounded-[90px] flex items-center p-[16px] justify-center text-[#0A2D4C] text-[16px]
+  };
+  .booking-session-info{
+@apply w-[412px] h-[61px] ml-[38%]  bg-[#C2E1F9] rounded-[14px] border-[2px] border-[#0085D0] px-[24px] py-[10px] flex items-center gap-[10px] justify-center
+  };
+  .session-card{
+    @apply w-[360px] h-[503px] rounded-[14px]  bg-gradient-to-r from-[#0093FE] to-[#005BB0]
+  }
+  .session-time-button{
+   @apply border-[2px] border-white/30 rounded-[42px] w-[72px] h-[25px] text-white/60 px-[6px] py-[13px] text-[10px] font-inter mb-10
+  };
+  .date-select-button{
+    @apply w-[153px] h-[45px] rounded-[111px] border-[2px] border-black py-[12px] px-[20px] font-semibold text-[13px] flex justify-center items-center
+  }
+}
