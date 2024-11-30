@@ -86,7 +86,7 @@ const MainContent = () => {
                 <div className='flex flex-col gap-[14px]'>
                     <div className='flex gap-[6px]'>
                         <h1 className='text-[24px] font-[500]'>Iam from</h1>
-                        <Image src='/assets/region.png' height={20} width={40} alt='region' />
+                        <Image src='/assets/Region.png' height={20} width={40} alt='region' />
                     </div>
                     <h2 className='text-[20px] text-gray-500'>Chennai, India</h2>
                 </div>
