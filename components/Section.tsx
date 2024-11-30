@@ -20,7 +20,7 @@ const Section = () => {
         <h2 className="text-white text-[22px]">Back</h2>
       </Link>
       {/* main profile */}
-      <div className="bg-white rounded-[16px] w-[415px] h-[523px] fixed top-[132px] left-[78px] flex items-center justify-center p-[54px]">
+      <div className="bg-white rounded-[16px] w-[415px] h-[500px] fixed top-[132px] left-[78px] flex items-center justify-center p-[54px]">
         <div className="w-[307px] h-[433px] flex gap-[12px] flex-col items-center ">
           <Image src='/assets/photo.jpeg' height={238} width={208} alt="photo" className="h-[238px] object-cover w-[238px] object-top rounded-[26px]" />
           <div className="w-[268px] h-[33px] flex gap-[10px] justify-center items-center">
