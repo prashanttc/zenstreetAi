@@ -99,7 +99,7 @@
   };
 
   .book-session-button {
-    @apply w-[415px] h-[68px] fixed top-[650px] left-[78px] rounded-[44px] bg-white py-[18px] px-[26px] flex items-center justify-center;
+    @apply w-[415px] h-[68px] rounded-[44px] bg-white py-[18px] px-[26px] flex items-center justify-center;
   };
 
   .border-gradient {
